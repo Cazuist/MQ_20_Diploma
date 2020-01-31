@@ -414,9 +414,8 @@ body {
 
     word-spacing: 2px;  
   }
-
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
   .main-content {
-    max-width: 320px;
     min-width: 320px;
   }
 
@@ -622,7 +621,7 @@ body {
     margin-top: 84px;
   }
 }
-
+/*
 @media (min-width: 641px) and (max-width: 960px) {
   .main-header {
     min-width: 768px;    
@@ -1132,3 +1131,4 @@ body {
     background-image: url("../images/game_1920.jpg");
   }
 }
+*/
