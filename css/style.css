@@ -22,7 +22,7 @@ body {
 }
 
 
-/*Шапка страницы*/
+/*-------------------------------Шапка страницы-----------------------------*/
 .main-header {
   position: relative;
 
@@ -50,7 +50,10 @@ body {
 
   max-width: 1530px;
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
+
+  padding-left: 9.48%; 
+  padding-right: 9.48%;  
 }
 
 .main-header-content svg,
@@ -84,9 +87,7 @@ body {
 .links-card {
   display: flex;
   box-sizing: border-box;
-  width: 47.5%;
   height: 77px;
-  padding-left: 5.8%;
 
   font-size: 14px;  
   text-decoration: none;
@@ -97,16 +98,17 @@ body {
   border-radius: 35px;  
 }
 
+.links-card svg{
+  width: 40px;
+}
+
 .link-GooglePlay {
-    padding-left: 8.4%;
-  }
+  padding-left: 8.4%;
+}
 
 .links-card.link-AppStore svg {
   margin-top: -5px;
-}
-
-.links-card svg{
-  width: 40px;
+  padding-left: 13%;
 }
 
 .links-text {
@@ -128,17 +130,11 @@ body {
 /*---------------------Основное содержание--------------------------------------*/
 .main-content {
   max-width: 1920px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.our-team {
-  margin-right: auto;
-  margin-left: auto; 
 }
 
 .our-team-article {
   position: relative;
+  overflow: hidden;
 }
 
 .section-row {
@@ -243,8 +239,6 @@ body {
 
 .our-activity-articles {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .our-activity-prevew-box {
@@ -682,10 +676,6 @@ body {
     line-height: 1.2;
   }  
 
-  .our-team {
-    overflow: hidden;
-  }
-
   .section-row {
     padding-right: 30px;
     padding-left: 30px;
@@ -786,14 +776,8 @@ body {
   }
 
   .our-team-article:nth-of-type(2n) .img-box {
-    top: 0;
-
-    width: 100%;
-  }
-
-  .players-img {
-    margin-top: 40px;
-    margin-left: 44%;
+    top: 41px;
+    right: 0;
   }
 
   .our-activity-articles {
@@ -816,7 +800,7 @@ body {
   }  
 
   .our-activity-content {
-    padding: 27px 30px 100px 30px;
+    padding: 27px 51px 100px 30px;
   }
 
   .find-contact-content {
@@ -904,6 +888,10 @@ body {
     padding-left: 26px;
   }
 
+  .links-card {
+    width: 310px;
+  }
+
   .main-footer-logo {
     margin-top: 54px;
   }
@@ -914,7 +902,7 @@ body {
     padding-top: 45px;
     padding-bottom: 110px;
 
-    background-image: url("../images/football_1280.jpg");    
+    background-image: url("../images/football_1920.jpg");    
   }
 
   .main-header-logo,
@@ -926,7 +914,8 @@ body {
     margin-top: 264px;
     margin-bottom: 215px;
 
-    font-size: 90px;
+    font-size: calc(3.125vw + 30px);
+ 
     letter-spacing: 4px;
   }
 
@@ -950,16 +939,16 @@ body {
   }
 
   .links-card {
-    padding-left: 32px;
+    width: 46.1%;
+    padding-left: 4.8%;
+  }
+
+  .link-GooglePlay {
+    padding-left: 7.4%;  
   }
 
   .links-card svg{
     width: 45px;
-  }
-
-  .main-content {
-    min-width: 1920px;
- 
   }
 
   .section-row-title {
@@ -985,16 +974,13 @@ body {
   }
 
   .section-row-wrapper {
-    width: 716px;
-  }
-
-  .our-team-article:nth-of-type(2n+1) .section-row-wrapper {
-    margin-right: 195px;    
+    width: 38%;
+    padding-right: 9.48%;
   }
 
   .our-team-article:nth-of-type(2n) .section-row-wrapper {
-    width: 750px;
-    margin-left: 193px;    
+    width: 39.06%;
+    padding-left: 10%;    
   }
 
   .info-block-header {
@@ -1019,83 +1005,86 @@ body {
   }
 
   .our-team-article:nth-of-type(2n+1) .img-box {
-    left: 392px;
+    right: calc(47.48% + 50px);
     top: 27px;
   }
 
   .our-team-article:nth-of-type(2n) .img-box {
     top: 23px;
-    right: 124px;
+    left: 42%;
   }
 
-  .our-activity-articles:nth-of-type(2n) picture {
+  .our-activity-articles:nth-of-type(2n) .our-activity-prevew-box {
     order: 2;
   }
 
-  .our-activity-articles picture,
+  .our-activity-prevew-box,
   .our-activity-content {
     width: 50%;    
   }
 
-  .our-activity-articles img {
-    width: 960px;
-    height: 730px;
+  .be-active-article-preview {
+    overflow: hidden;
   }
 
-  .our-activity-articles picture {
-    margin-bottom: -5px;
+  .our-activity-preview {
+    height: 38.021vw;
   }
-
 
   .our-activity-content {
-    margin-right: 180px;
-    padding-top: 233px;  
-    padding-right: 14px;
-    padding-left: 122px;
+    box-sizing: border-box;
+    padding-top: calc(13.958vw - 19px);  
+    padding-right: 10.104vw;
+    padding-left: 6.458vw;
   }
 
-  .our-activity-articles:nth-of-type(2n) .our-activity-content {
-    margin-left: 180px;
-    margin-right: 0;
-    padding-top: 233px;
-    padding-right: 125px;  
-    padding-left: 11px;  
+  .our-activity-articles:nth-of-type(2n) .our-activity-content {    
+    padding-right: 6.458vw;
+    padding-left: 10.104vw;
   }
 
-  .our-activity-title {
-    margin-bottom: 89px;  
+  .our-activity-title {    
+    margin-bottom: 5.417vw;
+    line-height: 1;
+
+    font-size: calc(2.083vw + 40px);  
   }  
 
   .our-activity-articles:nth-of-type(2n) .our-activity-title {
-    margin-bottom: 49px;
+    margin-bottom: 3.229vw;
   }
 
   .work-it-article .our-activity-title {
-    margin-bottom: 85px;
+    margin-bottom: 5.104vw;
   }
 
   .our-activity-info {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(0.417vw + 16px);
+    line-height: calc(1 + 4 / 24);
 
     letter-spacing: 1px;
     word-spacing: 1px;
   }
 
   .article-label {
-    top: 212px;
-    left: calc(50% - 83px);
+    top: 28.9%;
+    right: -4.375vw;
+    z-index: 2;
 
-    width: 168px;
-    height: 156px;
+    align-items: center;
+
+    width: 8.75vw;
+    height: 8.125vw;
 
     background-color: #5e3db3;
   }
 
-  .article-label-number {
-    margin-top: 54px;
+  .our-activity-articles:nth-of-type(2n) .article-label {
+    left: -4.375vw;
+  }
 
-    font-size: 24px;
+  .article-label-number {    
+    margin-top: -8.8%;
   }
 
   .main-footer {
@@ -1105,20 +1094,13 @@ body {
     background-image: url("../images/game_1280.jpg");
   }
 
-  .main-footer-content {
-    width: 1530px;
-    margin-right: auto;
-    margin-left: auto;  
-  }
-
   .main-footer-header {
     margin-bottom: 151px;
   }
 
   .main-footer-logo-symbol {
-    width: 130px;
-    height: 137px;
-    box-sizing: border-box;
+    width: calc(2.083vw + 90px);
+    height: calc(2.5vw + 89px);    
     padding: 20px;
 
     background-color: #6a46c5;
@@ -1133,13 +1115,13 @@ body {
   }
 
   .logo-text-row-1 {
-    font-size: 80px;
+    font-size: calc(3.125vw + 20px);
   }
 
   .logo-text-row-2 {
     margin-top: -10px;
 
-    font-size: 30px;    
+    font-size: calc(1.042vw + 10px);    
   }
 
   .main-footer-logo {
@@ -1147,23 +1129,133 @@ body {
   }
 }
 
-@media (min-width: 1921px) {
-  .main-header {
-    background-image: url("../images/football_1920.jpg");    
-  }
-
-  .main-footer {
-    background-image: url("../images/game_1920.jpg");
-  }
-}
-
 /*------------------Дополнительные медиа-запросы--------------------------*/
 @media (min-width: 641px) and (max-width: 767px) {
+  
+  .our-team-article:nth-of-type(2n) .img-box {
+    right: calc(65.625vw - 504px);
+  }
+
+  .our-activity-title {
+    font-size: 10vw;
+  }
+
   .logo-text-row-1 {
     font-size: 10vw;
   }
 
   .logo-text-row-2 {
     font-size: 4.7vw; 
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1450px) {
+  .main-header {
+    background-image: url("../images/football_1280.jpg");    
+  }  
+
+  .main-header-title .row-1 {
+    margin-left: 4.9%;        
+  }
+
+  .main-header-title .row-2 {
+    margin-left: 21.3%;
+  }   
+}
+
+@media (min-width: 1921px) {
+  .main-header {
+    background-image: url("../images/football_1920.jpg");    
+  }
+
+  .main-header-title {
+    font-size: 90px;
+  }
+
+  .main-content {
+    margin-right: auto;
+    margin-left: auto;
+  }  
+
+  .our-activity-articles {
+    min-height: 730px;
+  }
+
+  .our-activity-content {
+    box-sizing: border-box;
+    padding-top: 248px;  
+    padding-right: 183px;
+    padding-left: 127px;
+  }
+
+  .our-activity-articles:nth-of-type(2n) .our-activity-content {
+    padding-right: 125px;
+    padding-left: 191px; 
+  }
+
+  .our-activity-prevew-box picture {
+    overflow: hidden;
+  }
+
+  .our-activity-preview {
+    max-height: 730px;
+  }
+
+  .our-activity-title {    
+    margin-bottom: 104px;
+    line-height: 1;
+
+    font-size: 80px;  
+  }  
+
+  .our-activity-articles:nth-of-type(2n) .our-activity-title {
+    margin-bottom: 62px;
+  }
+
+  .work-it-article .our-activity-title {
+    margin-bottom: 98px;
+  }
+
+  .our-activity-info {
+    font-size: 24px;
+  }
+
+  .article-label {
+    top: 212px;
+    right: -84px;
+    z-index: 2;
+
+    width: 168px;
+    height: 156px;   
+
+    align-items: center;
+    background-color: #5e3db3;
+  }
+
+  .our-activity-articles:nth-of-type(2n) .article-label {
+    left: -84px;
+  }
+
+  .main-footer {
+    background-image: url("../images/game_1920.jpg");
+  }
+
+  .main-footer-logo-symbol {
+    width: 130px;
+    height: 137px;    
+  }
+
+  .main-footer-header {
+    margin-left: -40px;
+  }
+
+  .logo-text-row-1 {
+    font-size: 80px;
+  }
+
+  .logo-text-row-2 {
+    margin-top: -10px;
+
+    font-size: 30px;    
   }
 }
